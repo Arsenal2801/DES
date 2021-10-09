@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>cifrar</servlet-name>
+        <servlet-class>Cifrar.cifrar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>proceso</servlet-name>
+        <servlet-class>Servlets.proceso</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Obtencion_Archivos</servlet-name>
+        <servlet-class>Servlets.Obtencion_Archivos</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cifrar</servlet-name>
+        <url-pattern>/cifrar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>proceso</servlet-name>
+        <url-pattern>/proceso</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Obtencion_Archivos</servlet-name>
+        <url-pattern>/Obtencion_Archivos</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
